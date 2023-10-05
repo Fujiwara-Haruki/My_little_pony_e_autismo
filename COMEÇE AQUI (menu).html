@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My little pony</title>
+
+        <style>
+            /*background da página*/
+            body{
+                background-image: url(img/fundo_1.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+
+            /*menu*/
+            .menu{    
+                background-color: palevioletred;
+                list-style: none;
+                text-align: center;
+                border: 1px solid purple;
+            }
+
+            /*menu itens*/
+            .menu li{
+                position: relative;
+                display:inline-block;
+                font-size: 20px;
+                
+            }
+
+            /*menu itens links*/
+            .menu li a{
+                text-decoration: none;
+                color: #4B0082;
+                display:block;
+                padding: 5px 10px;
+            }
+
+            /*mudar quando passar o mouse*/
+            li a:hover{
+                background-color: #ffa5bd;
+            }
+
+            /*menu dentro do menu*/
+            .personagens_menu{
+                position: absolute;
+                display: none;
+            }
+
+            /*elementos menu dropdown*/
+            .personagens_menu li{
+                display: block;
+                width: 160px;
+                border: 1px solid purple;
+                background-color: #DDA0DD;
+            }
+
+            /*aparecer o menu dropdown quando passar o mouse*/
+            .menu li:hover .personagens_menu{
+                display: block;
+            }
+
+            /*titulo*/
+            .titulo{
+                color:#4B0082;
+            }
+
+            /*parágrafo*/
+            .conteudo{
+                display: flex;
+                font-size: 20px;
+                color:#4B0082;
+                margin-left: 35%;  /*margin-left/right é pra ficar no meio, aicionar margem dos lados*/
+                margin-right: 35%;
+                text-align: justify;
+                background-color: #DDA0DD;
+                padding:10px 10px;
+                border-radius: 2%;
+            
+            }
+
+            /*imagem main 6*/
+            .main_6{
+                height: auto;
+                width: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--menu (lista)-->
+        <nav>
+            <ul class="menu">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="autismo.html">Autismo</a></li>
+                <li><a href="#">Personagens</a>
+                    <ul class="personagens_menu">   <!--menu dropdown-->
+                        <li><a href="twilight.html">Twilight Sparkle</a></li>
+                        <li><a href="fluttershy.html">Fluttershy</a></li> 
+                        <li><a href="pinkie.html">Pinkie Pie</a></li>
+                        <li><a href="maud_pie.html">Maud Pie</a></li>
+                        <li><a href="sunburst.html">Sunburst</a></li>
+                    </ul>
+                </li>
+                <li><a href="extra.html">Extra</a></li>
+            </ul>
+        </nav>
+        <!--conteúdo página-->
+        <div align="center">
+            <h1 class="titulo">My little pony</h1>
+
+            <p class="conteudo">My little pony é uma animação sobre amizade e magia. Twilight Sparkle, a protagonista, se muda para Ponyville com a missão de fazer amigos. Ela faz amigos e aprende sobre 
+                a magia da amizade.<br/><br/>Neste trabalho, irei juntar os temas My little pony e autismo, falando um pouco sobre meus headcanons de personagens autistas. Lembrando 
+                que não tem nada confirmando se esses personagens são autistas ou não, e uma pessoa autista se identificando com algum dos personagens e tendo um headcanon do 
+                personagem autista não machuca ninguém.</p>
+
+                <!--imagem-->
+                <img class="main_6" src="img/main_6.png">
+        </div>
+    </body>
+</html>

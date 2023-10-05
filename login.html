@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+
+        <style>
+            /*background da página*/
+            body{
+                background-image: url(img/fundo_2.png);
+                background-size: 100% 400%;
+            }
+
+            /*titulo*/
+            .titulo{
+                background-color: palevioletred;
+                color: #4B0082;
+            }
+
+            /*formulario*/
+            form{
+                font-size: 20px;
+                color: #4B0082;
+                margin-left: 35%;
+                margin-right: 35%;
+                background-color: #DDA0DD;
+                border-radius: 2%;
+            }
+
+            /*botão*/
+            .button{
+                background-color: palevioletred
+            }
+
+            /*clique aqui*/
+            .clique_aqui{
+                text-decoration: none;
+                color:#320652;
+            }
+
+            .clique_aqui:hover{
+                background-color: #f195b4;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="titulo" align="center">Tela de Login</h1>
+
+        <!--formulário-->
+        <form align="center" action="COMEÇE AQUI (menu).html" method="post">
+            <label>Nome de Usuário:</label>
+            <input type="text" placeholder="digite aqui" required="required"> <br/><br/>
+
+            <label>Senha:</label>
+            <input type="password" placeholder="digite aqui" required="required ">
+
+             <!--cadastro-->
+            <p>Não tem cadastro? <a class="clique_aqui" href="cadastro.html">Clique aqui</a></p>
+
+            <!--botão-->
+            <input class="button" type="submit" value="Conectar">
+        </form>
+
+       
+    </body>
+</html>
